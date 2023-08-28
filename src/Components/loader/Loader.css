@@ -1,0 +1,19 @@
+.spinner .path {
+    animation: infinity-load 1.5s infinite cubic-bezier(.65, .05, .36, 1)
+}
+
+@keyframes infinity-load {
+    to {
+        stroke-dashoffset: 10
+    }
+}
+
+
+.loader {
+    background-color: transparent(#ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}

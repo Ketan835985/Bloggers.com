@@ -1,0 +1,83 @@
+.container-res {
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://i.postimg.cc/yNPZ2x01/wolfgang-hasselmann-Jqq-Lok-D9p2s-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.form {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+label {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: beige;
+    display: flex;
+    align-items: center;
+}
+
+.fname,
+.lname,
+.email-res,
+.phone,
+.password {
+    width: 50%;
+    height: 2em;
+    border-radius: 4px;
+    padding: 0 0.3em;
+}
+
+
+
+#title {
+    width: 5em;
+    height: 2em;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: rgb(101, 101, 216);
+    width: 5em;
+    height: 2em;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: rgb(62, 62, 215);
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px rgb(142, 194, 224);
+}
+
+
+.heading {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    word-wrap: break-word;
+}
+
+.separate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
