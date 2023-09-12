@@ -34,7 +34,6 @@ function Content({ blogImage, body, category, subCategory, tags, authorId, isPub
                             })}
                         </select>
                     </div>
-
                     <div className='sub-Content'>
                         <select name="" id="">
                             {subCategory.map((sub, index) => {
@@ -52,7 +51,7 @@ function Content({ blogImage, body, category, subCategory, tags, authorId, isPub
                         <p>{category}</p>
                     </div>
                     <div>
-                        <button disabled style={{ backgroundColor: isPublished ? "#9cf296" : "#De503f", color: 'white' }}>{isPublished ? "Published" : "Not Published"}</button>
+                        <button className='button-public' disabled style={{ backgroundColor: isPublished ? "#9cf296" : "#De503f", color: 'white' }}>{isPublished ? "Published" : "Not Published"}</button>
                     </div>
                 </div>
             </div>
