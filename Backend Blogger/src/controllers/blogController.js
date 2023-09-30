@@ -9,7 +9,7 @@ const createBlog = async (req, res) => {
     try {
         const userId = req.userId;
         const file = req.files
-        const { title, body, tags, category, subCategory, isPublished } = req.body;
+        const { title, body, tags, category, subCategory, isPublished} = req.body;
         if (!title || !body || !tags || !category || !subCategory || !file) {
             return res.status(400).json({ status: false, message: "Please fill all the required fields" })
         }
@@ -21,7 +21,7 @@ const createBlog = async (req, res) => {
             subCategory: subCategory.split(','),
             isPublished
         }
-        if (isPublished) {
+        if (isPublished=='true') {
             blogDetails.publishedAt = new Date()
         }
         if (file) {

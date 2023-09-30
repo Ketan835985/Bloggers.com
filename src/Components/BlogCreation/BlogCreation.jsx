@@ -39,6 +39,7 @@ export default function BlogCreation() {
         for (let key in blogData) {
             dataDetail.append(key, blogData[key])
         }
+        dataDetail.append('isChecked', isChecked)
         fetch('http://localhost:8080/createBlog', {
             method: 'POST',
             headers: {
